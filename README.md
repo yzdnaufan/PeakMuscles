@@ -2,11 +2,11 @@
 
 Kelompok :
 - christina
-- novaldy
+- MOCHAMMAD NOVALDY PRATAMA HAKIM	(20/463606/TK/51598)
 - AHMAD YAZID NAUFAN				(20/460537/TK/51126)
 
 # NAMA APLIKASI :
-peakmuscle
+PeakMuscle
 
 # DESKRIPSI :
 BESARKAN OTOTMU
