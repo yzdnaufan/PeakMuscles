@@ -1,1 +1,22 @@
 # Junior-Project-K1
+
+Kelompok :
+- CHRISTINA ANGRAENI PANELLAH		(20/456840/TK/50664)
+- MOCHAMMAD NOVALDY PRATAMA HAKIM	(20/463606/TK/51598)
+- AHMAD YAZID NAUFAN				(20/460537/TK/51126)
+
+# NAMA APLIKASI :
+peakmuscle
+
+# DESKRIPSI :
+BESARKAN OTOTMU
+
+# Tipe Aplikasi :
+Desktop App
+
+# Permasalahan yang dipecahkan :
+
+
+# APLIKASI YANG SEJENIS :
+Home Workout App 
+
