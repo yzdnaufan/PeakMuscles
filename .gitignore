@@ -1,5 +1,10 @@
-deploy
+Thumbs.db
+.DS_Store
+.dist
+.tmp
 .sass-cache
-
-/bower_components/
-/node_modules/
+npm-debug.log
+node_modules
+package-lock.json
+yarn.lock
+netlify

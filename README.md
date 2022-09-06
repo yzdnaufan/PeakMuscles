@@ -1,264 +1,125 @@
-# Jekyll blog theme
+# Airspace By Themefisher
 
-Simple and nice blog theme based on Inclusion framework.
+Airspace is a clean, unique, and free bootstrap website template. The template is built with refined business as well as corporate elements and saturated with rich typography, allowing to convey a perfect message to the first visit according to the niche motto.
 
-Proudly built with [Jekyll](http://jekyllrb.com/) and [Grunt](http://gruntjs.com/), hosted on [Github](https://github.com).
-Compatible browsers: IE8+, Firefox, Chrome, Opera, Yandex.browser, Safari
+<!-- demo -->
+## Example Site
 
-Check out [quick demo](http://website-templates.github.io/jekyll-inclusion/) of this theme
+| [![](screenshots/homepage.png)](https://demo.themefisher.com/themefisher/airspace/) | [![](screenshots/about.png)](https://demo.themefisher.com/themefisher/airspace/about.html) | [![](screenshots/service.png)](https://demo.themefisher.com/themefisher/airspace/service.html) |
+|:---:|:---:|:---:|
+| **Homepage**  | **About**  | **Service**  |
+| [![](screenshots/portfolio.png)](https://demo.themefisher.com/themefisher/airspace/portfolio.html) | [![](screenshots/pricing.png)](https://demo.themefisher.com/themefisher/airspace/pricing.html) | [![](screenshots/blog-r.png)](https://demo.themefisher.com/themefisher/airspace/blog-right-sidebar.html) |
+| **Portfolio** | **Pricing** | **Blogs** |
+| [![](screenshots/contact.png)](https://demo.themefisher.com/themefisher/airspace/contact.html) | [![](screenshots/soon.png)](https://demo.themefisher.com/themefisher/airspace/coming-soon.html) | [![](screenshots/404.png)](https://demo.themefisher.com/themefisher/airspace/404.html) |
+| **Contact** | **Coming Soon** | **404** |
 
----
+👉🏻[View Live Preview](https://demo.themefisher.com/themefisher/airspace/)
 
-##Contents
-* [Requirements](#requirements)
-* [Structure](#structure)
-* [Development and blogging](#development-and-blogging)
-	- [Editorconfig](#editorconfig)
-	- [Grunt tasks](#grunt-tasks)
-	- [Data driven nav](#data-driven-nav)
-	- [Post creation](#post-creation)
-* [Changelog](#changelog)
-* [Credits](#credits)
-* [License](#license)
+<!-- resources -->
+## Pages
 
-## Requirements:
+* **Homepage**
+* **About**
+* **Service**
+* **Portfolio**
+* **Portfolio Dingle**
+* **Pricing**
+* **Blog Grid**
+* **Blog Full Width**
+* **Blog Left Sidebar**
+* **Blog Right Sidebar**
+* **Blog Single**
+* **Contact**
+* **FAQ**
+* **404**
+* **Coming Soon**
 
-- [Ruby](http://www.ruby-lang.org/)
-- [Node.js](http://nodejs.org/)
-- [Grunt](http://gruntjs.com/) (`npm install -g grunt-cli`)
-- [Bower](http://bower.io/) (`npm install -g bower`)
-- [Python](http://www.python.org/) with [pip](http://www.pip-installer.org/)
+<!-- download -->
+## Download And installation
 
-## Structure
-There are two branches: master branch and gh-pages. Master is a main develop branch.
-Project based on [Synteagle general project template](https://github.com/synteagle/se-general-template)
-```
-./
-├── .editorconfig
-├── Gruntfile.js
-├── package.json
-├── bower.json
-├── README.md
-├── CHANGELOG.md
-├── Rakefile
-├── Gemfile
-├── _config.yml
-├── post.sh
-├──grunt/                                      * grunt tasks
-|   ├── task.js
-│   └── aliases.yml 
-|
-├── dev/                                       * site source
-|   ├── coffee/                                * coffee scripts
-|	│   └── main/                              * main scripts
-|	│
-│   ├── images/                                * image sources
-|	│
-│   ├── jade/                                  * templates
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.jade
-|	│   ├── helpers/                           * helper mixins
-|	│   ├── vendor/                            * third-party code
-|	│   ├── layouts/                           * page layouts
-|	│   └── pages/                             * main pages templates
-|	│
-│   ├── js/                                    * compiled and source js
-|	|   ├── main/                              * main site scripts
-|	│   ├── ie/                                * ie compat scripts
-|	│   └── vendor/                            * vendor scripts
-|	│
-|	├── sass/                                  * sass preprocessor styles
-|	|	├── blocks/                            * blocks library
-|	│   |   └── block.sass
-|	│   ├── helpers/                           * mixins and vars
-|	│   ├── vendor/                            * third-party code
-|	│   └── screen.sass
-|	│
-│   ├── ruby/                                  * jekyll plugins
-|	│
-│   ├── helpers/                               * helper files
-|	│
-│   ├── fonts/                                 * font sources
-|	│
-│   └── devtools/                              * some dev tools
-│
-├── build/                                     * built source
-|	├── index.html
-|	├── _data/                                 * jekyll data (i18n, locales)
-|	|
-|	├── _drafts/                               * drafts
-|	|
-|	├── _layouts/                              * layouts for jekyll generation
-|	|
-|	├── _plugins/                              * jekyll plugins
-|	|
-|	├── _posts/                                * posts (*.md)
-|	|
-|	└── static/                                * static assets
-|		├── css/                               * minified styles
-|		|
-|		├── images/                            * minified images
-|		│
-|		├── js/                                * minified assembled js
-|		|
-|		└── fonts/                             * @font-face-ready webfonts
-│
-└── publ/                                      * generated website
-	├── _data/                                 * jekyll data (i18n, locales)
-	|
-	├── _drafts/                               * drafts
-	|
-	├── _posts/                                * posts (*.md)
-	|
-	└── static/                                * static assets
-		└── images/                            * post and pages images
+Download this template from [Github](https://github.com/themefisher/airspace/archive/main.zip)
+
+<!-- installation -->
+### Basic Usages
+
+After downloading the template, you can simply edit the HTML and CSS files from the `theme` folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
+
+### Advanced Usage
+
+For advanced usage, you have some prerequisites to install. Then you can run it on your localhost. You can view the package.json file to see which scripts are included.
+
+#### Install prerequisites (once for a machine)
+
+* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
+* **Gulp Installation:** Install gulp globally from your terminal
 
 ```
-
-Take a look at [this article](http://www.aymerick.com/2014/07/22/jekyll-github-pages-bower-bootstrap.html) about creating dev and deploy branches for your blog. 
-
-NOTE: this example use in _config.yml use baseurl option, so after domain there is path: /jekyll-inclusion. If you want to run this example on the local machine you should comment or remove this line in _config.yml file.
-
-## Development and blogging
-
-### Editorconfig
-This project contains .editorconfig file. It describes codestyle like indentation, trailing whitespaces etc. See more details [here](http://editorconfig.org/) 
-
-### Grunt tasks
-Here comes groups of grunt tasks with some explanations
-
-#### Start 
-`grunt start` - Install bower dependencies and place them to dev folders
-```
-- 'shell:bower'                          Install bower components
-- 'bower:ie'                             Copy ie components to js folder
-- 'bower:vendor'                         Copy vendor  components to js folder
+npm install --global gulp-cli
 ```
 
-#### Dev
-`gulp dev` - Dev task with static server
+Or visit the original [Gulp docs](https://gulpjs.com/docs/en/getting-started/quick-start)
+
+#### Local setup
+
+After successfully installing those dependencies, open this theme with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+
+* Install dependencies
+
 ```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'jade'                                 Compile Jade templates
-- 'sync:imagesDev'                       Sync images
-- 'sync:fontsDev'                        Sync fonts
-- 'sync:helpersDev'                      Sync helpers and other assets
-- 'sync:rubyDev'                         Sync jekyll plugins
-- 'sync:mainPubl'                        Sync posts and pages from publ folder
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'browserSync:dev'                      Run dev server with watch option
-- 'watch:dev'                            Watch for changes and run dev task
+npm install
 ```
 
-#### Build 
-`grunt build` - Build task
+* Run locally
+
 ```
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'imagemin'                             Minify images
-- 'cmq'                                  Combine media queries in css files
-- 'autoprefixer'                         Add vendor prefixes in css
-- 'csscomb'                              Applie styleguide to stylesheets
-- 'uglify'                               Minify javascript files
-- 'csso'                                 Minify stylesheets
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
-- 'browserSync:test'                     Run test server without watch
+npm run dev
 ```
 
-#### Rebuild 
-`grunt rebuild` - Regenerate and build project by running all tasks
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live reload the browser when changes are saved.
+
+#### Production Build
+
+After finishing all the customization, you can create a production build by running this command.
+
 ```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'jade'                                 Compile Jade templates
-- 'sync:imagesDev'                       Sync images
-- 'sync:fontsDev'                        Sync fonts
-- 'sync:helpersDev'                      Sync helpers and other assets
-- 'sync:rubyDev'                         Sync jekyll plugins
-- 'sync:mainPubl'                        Sync posts and pages from publ folder
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'imagemin'                             Minify images
-- 'cmq'                                  Combine media queries in css files
-- 'autoprefixer'                         Add vendor prefixes in css
-- 'csscomb'                              Applie styleguide to stylesheets
-- 'uglify'                               Minify javascript files
-- 'csso'                                 Minify stylesheets
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
+npm run build
 ```
 
-#### Theme
-`grunt theme` - Theme styles and scripts fixing
-```
-- 'coffee:main'                          Compile main coffescripts
-- 'concat:main'                          Concatenate main javascripts
-- 'concat:ie'                            Concatenate ie javascripts
-- 'concat:vendor'                        Concatenate vendor javascripts
-- 'sass'                                 Compile Sass stylesheets
-- 'sync:cssTheme'                        Sync css with Jekyll generated assets
-- 'sync:jsTheme'                         Sync js with Jekyll generated assets
-- 'browserSync:theme'                    Run dev server with watch option
-- 'watch:theme'                          Watch for changes and run theme task
-```
+Now you get a `theme` folder that has all the changes you have made. you can use this folder as your main theme.
 
-#### Template
-`grunt template` - Theme templates fixing
-```
-- 'jade'                                 Compile Jade templates
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-```
+👉🏻 [visit documentation](https://docs.themefisher.com/airspace/)
 
-#### Publish
-`grunt publish` - Copy posts, pages and images and generates website
-```
-- 'sync:mainPubl'                        Copy posts, pages and images
-- 'shell:jekyllBuild'                    Generate site using Jekyll.rb
-- 'processhtml'                          Replace assets paths in html
-- 'htmlmin'                              Minify html
-- 'clean:dev'                            Remove dev things
-```
+<!-- reporting issue -->
+## Reporting Issues
 
-#### Deploy 
-`grunt deploy` - Deploy project by running Rakefile: git or ftp push
-```
-- 'shell:deploy'                         Deploy generated site to gh-pahes
-```
+We use GitHub Issues as the official bug tracker for the Airspace Template. Please Search [existing issues](https://github.com/themefisher/airspace/issues). Someone may have already reported the same problem.
+If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/airspace/issues).
 
-#### Server 
-`grunt server` - Run server without watching for changes
-```
-- 'browserSync:test'                     Run test server without watch
-```
+<!-- support -->
+## Technical Support or Questions (Paid)
 
-### Data driven nav
-This theme use special data from _data/nav.yml to generate navigation. It's useful when you need to create nested menu. Also each page have menu option and if it will turn to true - this page will appear in menu.
+If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
 
-### Post creation
-There is a [simple bash script](https://gist.github.com/orlovmax/f1b73a5fd01fc4b917c2) that allows us to create new posts. I've put it in the root of the website, so just execute it, like `bash post.sh your-post-name` or `post.sh your-post-name` and it will create new *.md file at `_publ/pages/_posts` with predefined draft layout from `_draft` directory and also it will create folder in `_publ/img/posts/` with name `your-post-name` for your post images. It's pretty simple and useful.
-
-## Changelog
-Youc can find full changelog [HERE](https://github.com/website-templates/jekyll-inclusion/blob/master/CHANGELOG.md)
-
-## Credits
-* [JADE bemto mixin](https://github.com/kizu/bemto)
-* [Lazy load plugin](http://www.appelsiini.net/projects/lazyload)
-* [Intense Image Viewer](http://tholman.com/intense-images/)
-* [Prism syntax highlighter](http://prismjs.com/download.html) 
-* [Detect Mobile Browsers](http://detectmobilebrowsers.com/)
-* [Clean blog jekyll theme](https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll)
-* [Strip.rb - strip newlines after for loop](https://github.com/aucor/jekyll-plugins)
-* [Tag pages generator](https://github.com/ilyakhokhryakov/jekyll-tagging-pagination)
-* [Tag and Category pages pagination](https://github.com/realjenius/realjenius.com/blob/master/_plugins/cat_and_tag_generator.rb)
-* [Jekyll i18n filter](https://github.com/gacha/gacha.id.lv/blob/master/_plugins/i18n_filter.rb)
-
+<!-- licence -->
 ## License
-[MIT](http://opensource.org/licenses/MIT)
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/airspace/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+
+<!-- resources -->
+## Resources
+
+Some third-party plugins that we used to build this template. Please check their license.
+
+* **Bootstrap v4.5**: <https://getbootstrap.com/docs/4.5/getting-started/introduction/>
+* **Jquery v3.5.1**: <https://jquery.com/download/>
+* **Ionicons Icons v2.0**: <https://ionicons.com/v2/>
+* **Google Fonts**: <http://fonts.google.com/>
+* **Animate CSS**: <https://animate.style/>
+* **Magnific Popup**: <https://dimsemenov.com/plugins/magnific-popup/>
+* **Slick**: <https://kenwheeler.github.io/slick/>
+* **Shuffle**: <https://vestride.github.io/Shuffle/>
+* **SyoTimer**: <http://syomochkin.xyz/folio/syotimer/demo.html>
