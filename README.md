@@ -20,3 +20,6 @@ Dalam masa pandemi dua tahun terakhir, masyarakat diharuskan tetap tinggal di ru
 # APLIKASI YANG SEJENIS :
 Home Workout App 
 
+
+### Credit github pages :
+https://github.com/website-templates/jekyll-inclusion 
