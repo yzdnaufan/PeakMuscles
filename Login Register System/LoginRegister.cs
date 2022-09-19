@@ -34,7 +34,17 @@ namespace Login_Register_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            Person person = new Person();
+            person.Username = txtUsernameLogin.Text;
+            person.Password = txtPasswordLogin.Text;
+            if (person.Login(person.Username, person.Password))
+            {
+                MessageBox.Show("Login Success");
+            }
+            else
+            {
+                MessageBox.Show("Login Failed! Who Are You?");
+            }
         }
     }
 }

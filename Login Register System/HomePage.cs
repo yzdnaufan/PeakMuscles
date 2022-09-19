@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Login_Register_System
 {
-    public partial class HomePage : Form
+    public partial class HomePageForm : Form
     {
         private string username;
-        public HomePage(string username)
+        public HomePageForm(string username)
         {
             this.username = username;
             InitializeComponent();

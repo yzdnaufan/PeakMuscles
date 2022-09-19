@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Login Register System"
+    "\\Login Register System",
+    "\\WorkoutTrainer"
   ],
-  "SelectedNode": "\\Login Register System\\LoginRegister.cs",
+  "SelectedNode": "\\WorkoutTrainer",
   "PreviewInSolutionExplorer": false
 }
