@@ -15,5 +15,5 @@ C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debu
 C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\LoginRegisterSystem.genruntimeconfig.cache
 C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\ref\LoginRegisterSystem.dll
 C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\Login_Register_System.Properties.Resources.resources
-C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\Login_Register_System.HomePage.resources
 C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\Login_Register_System.LoginRegister.resources
+C:\Users\Lenovo Yoga\Documents\GitHub\PeakMuscles\Login Register System\obj\Debug\net6.0-windows\Login_Register_System.HomePageForm.resources
