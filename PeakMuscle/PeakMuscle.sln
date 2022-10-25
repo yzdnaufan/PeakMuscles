@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeakMuscles", "PeakMuscles\PeakMuscles.csproj", "{387A5AE5-88EC-462F-8C11-3D303DC106B9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutTrainer", "..\WorkoutTrainer\WorkoutTrainer.csproj", "{A57D9ECE-DE62-4BDE-938A-7A839B68FEEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginRegisterSystem", "..\Login Register System\LoginRegisterSystem.csproj", "{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{387A5AE5-88EC-462F-8C11-3D303DC106B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{387A5AE5-88EC-462F-8C11-3D303DC106B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{387A5AE5-88EC-462F-8C11-3D303DC106B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A57D9ECE-DE62-4BDE-938A-7A839B68FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A57D9ECE-DE62-4BDE-938A-7A839B68FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A57D9ECE-DE62-4BDE-938A-7A839B68FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A57D9ECE-DE62-4BDE-938A-7A839B68FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
