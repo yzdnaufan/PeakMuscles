@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo Yoga\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj": {}
+    "C:\\Users\\Novaldy Pratama\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo Yoga\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj": {
+    "C:\\Users\\Novaldy Pratama\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo Yoga\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj",
+        "projectUniqueName": "C:\\Users\\Novaldy Pratama\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj",
         "projectName": "LoginRegisterSystem",
-        "projectPath": "C:\\Users\\Lenovo Yoga\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj",
-        "packagesPath": "C:\\Users\\Lenovo Yoga\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo Yoga\\Documents\\GitHub\\PeakMuscles\\Login Register System\\obj\\",
+        "projectPath": "C:\\Users\\Novaldy Pratama\\Documents\\GitHub\\PeakMuscles\\Login Register System\\LoginRegisterSystem.csproj",
+        "packagesPath": "C:\\Users\\Novaldy Pratama\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Novaldy Pratama\\Documents\\GitHub\\PeakMuscles\\Login Register System\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo Yoga\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Novaldy Pratama\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
