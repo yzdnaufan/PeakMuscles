@@ -23,5 +23,10 @@ namespace Login_Register_System
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
