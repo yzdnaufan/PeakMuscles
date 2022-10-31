@@ -48,5 +48,10 @@ namespace Login_Register_System
                 MessageBox.Show("Login Failed! Invalid Username or Password");
             }
         }
+
+        private void LoginRegister_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
