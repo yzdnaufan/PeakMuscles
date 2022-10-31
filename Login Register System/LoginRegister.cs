@@ -35,15 +35,17 @@ namespace Login_Register_System
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Person person = new Person();
-            person.Username = txtUsernameLogin.Text;
-            person.Password = txtPasswordLogin.Text;
+            person.Username = tbUsernameLogin.Text;
+            person.Password = tbPasswordLogin.Text;
             if (person.Login(person.Username, person.Password))
             {
-                MessageBox.Show("Login Success");
+                this.Hide();
+                HomePageForm homepage = new HomePageForm(" ");
+                homepage.Show();
             }
             else
             {
-                MessageBox.Show("Login Failed! Who Are You?");
+                MessageBox.Show("Login Failed! Invalid Username or Password");
             }
         }
     }
