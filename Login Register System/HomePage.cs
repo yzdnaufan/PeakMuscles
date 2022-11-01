@@ -28,5 +28,17 @@ namespace Login_Register_System
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WorkoutTrainer.main main = new WorkoutTrainer.main();
+            this.Hide();
+            main.Show();
+        }
+
+        private void HomePageForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
