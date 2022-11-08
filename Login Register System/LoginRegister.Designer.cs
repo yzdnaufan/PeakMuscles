@@ -75,7 +75,7 @@
             this.btnGoToLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGoToLogin.ForeColor = System.Drawing.Color.Snow;
             this.btnGoToLogin.Location = new System.Drawing.Point(61, 78);
-            this.btnGoToLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoToLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoToLogin.Name = "btnGoToLogin";
             this.btnGoToLogin.Size = new System.Drawing.Size(224, 64);
             this.btnGoToLogin.TabIndex = 1;
@@ -91,7 +91,7 @@
             this.btnGoToRegister.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGoToRegister.ForeColor = System.Drawing.Color.Snow;
             this.btnGoToRegister.Location = new System.Drawing.Point(282, 78);
-            this.btnGoToRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoToRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoToRegister.Name = "btnGoToRegister";
             this.btnGoToRegister.Size = new System.Drawing.Size(224, 64);
             this.btnGoToRegister.TabIndex = 2;
@@ -108,10 +108,11 @@
             this.loginPanel.Controls.Add(this.tbUsernameLogin);
             this.loginPanel.Controls.Add(this.lblUsername);
             this.loginPanel.Location = new System.Drawing.Point(61, 147);
-            this.loginPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(446, 354);
             this.loginPanel.TabIndex = 0;
+            this.loginPanel.Visible = false;
             this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLogin
@@ -120,7 +121,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.Snow;
             this.btnLogin.Location = new System.Drawing.Point(138, 218);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(176, 40);
             this.btnLogin.TabIndex = 5;
@@ -131,7 +132,7 @@
             // tbPasswordLogin
             // 
             this.tbPasswordLogin.Location = new System.Drawing.Point(105, 146);
-            this.tbPasswordLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPasswordLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tbPasswordLogin.Name = "tbPasswordLogin";
             this.tbPasswordLogin.Size = new System.Drawing.Size(239, 27);
             this.tbPasswordLogin.TabIndex = 4;
@@ -153,7 +154,7 @@
             // tbUsernameLogin
             // 
             this.tbUsernameLogin.Location = new System.Drawing.Point(105, 90);
-            this.tbUsernameLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsernameLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tbUsernameLogin.Name = "tbUsernameLogin";
             this.tbUsernameLogin.Size = new System.Drawing.Size(239, 27);
             this.tbUsernameLogin.TabIndex = 3;
@@ -187,7 +188,7 @@
             this.registerPanel.Controls.Add(this.tbNewUsername);
             this.registerPanel.Controls.Add(this.lblNewUsername);
             this.registerPanel.Location = new System.Drawing.Point(61, 147);
-            this.registerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.registerPanel.Margin = new System.Windows.Forms.Padding(2);
             this.registerPanel.Name = "registerPanel";
             this.registerPanel.Size = new System.Drawing.Size(446, 354);
             this.registerPanel.TabIndex = 0;
@@ -195,7 +196,7 @@
             // tbConfPass
             // 
             this.tbConfPass.Location = new System.Drawing.Point(106, 254);
-            this.tbConfPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbConfPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbConfPass.Name = "tbConfPass";
             this.tbConfPass.Size = new System.Drawing.Size(239, 27);
             this.tbConfPass.TabIndex = 7;
@@ -217,7 +218,7 @@
             // tbFullName
             // 
             this.tbFullName.Location = new System.Drawing.Point(106, 36);
-            this.tbFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbFullName.Margin = new System.Windows.Forms.Padding(2);
             this.tbFullName.Name = "tbFullName";
             this.tbFullName.Size = new System.Drawing.Size(239, 27);
             this.tbFullName.TabIndex = 3;
@@ -238,7 +239,7 @@
             // tbAge
             // 
             this.tbAge.Location = new System.Drawing.Point(106, 90);
-            this.tbAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAge.Margin = new System.Windows.Forms.Padding(2);
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(239, 27);
             this.tbAge.TabIndex = 4;
@@ -262,7 +263,7 @@
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.Snow;
             this.btnRegister.Location = new System.Drawing.Point(138, 304);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(176, 40);
             this.btnRegister.TabIndex = 8;
@@ -273,7 +274,7 @@
             // tbNewPass
             // 
             this.tbNewPass.Location = new System.Drawing.Point(106, 198);
-            this.tbNewPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNewPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbNewPass.Name = "tbNewPass";
             this.tbNewPass.Size = new System.Drawing.Size(239, 27);
             this.tbNewPass.TabIndex = 6;
@@ -295,7 +296,7 @@
             // tbNewUsername
             // 
             this.tbNewUsername.Location = new System.Drawing.Point(106, 142);
-            this.tbNewUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNewUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbNewUsername.Name = "tbNewUsername";
             this.tbNewUsername.Size = new System.Drawing.Size(239, 27);
             this.tbNewUsername.TabIndex = 5;
@@ -325,11 +326,12 @@
             this.Controls.Add(this.btnGoToLogin);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginRegister_FormClosed);
+            this.Load += new System.EventHandler(this.LoginRegister_Load);
             this.loginPanel.ResumeLayout(false);
             this.loginPanel.PerformLayout();
             this.registerPanel.ResumeLayout(false);
