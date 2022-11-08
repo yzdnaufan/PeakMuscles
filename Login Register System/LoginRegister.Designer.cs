@@ -38,6 +38,7 @@
             this.tbUsernameLogin = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.registerPanel = new System.Windows.Forms.Panel();
+            this.lblNotMatch = new System.Windows.Forms.Label();
             this.tbConfPass = new System.Windows.Forms.TextBox();
             this.lblConfPass = new System.Windows.Forms.Label();
             this.tbFullName = new System.Windows.Forms.TextBox();
@@ -107,12 +108,11 @@
             this.loginPanel.Controls.Add(this.lblPassword);
             this.loginPanel.Controls.Add(this.tbUsernameLogin);
             this.loginPanel.Controls.Add(this.lblUsername);
-            this.loginPanel.Location = new System.Drawing.Point(61, 147);
+            this.loginPanel.Location = new System.Drawing.Point(60, 146);
             this.loginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(446, 354);
             this.loginPanel.TabIndex = 0;
-            this.loginPanel.Visible = false;
             this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLogin
@@ -176,6 +176,7 @@
             // registerPanel
             // 
             this.registerPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.registerPanel.Controls.Add(this.lblNotMatch);
             this.registerPanel.Controls.Add(this.tbConfPass);
             this.registerPanel.Controls.Add(this.lblConfPass);
             this.registerPanel.Controls.Add(this.tbFullName);
@@ -193,11 +194,23 @@
             this.registerPanel.Size = new System.Drawing.Size(446, 354);
             this.registerPanel.TabIndex = 0;
             // 
+            // lblNotMatch
+            // 
+            this.lblNotMatch.AutoSize = true;
+            this.lblNotMatch.Location = new System.Drawing.Point(278, 236);
+            this.lblNotMatch.Name = "lblNotMatch";
+            this.lblNotMatch.Size = new System.Drawing.Size(104, 20);
+            this.lblNotMatch.TabIndex = 9;
+            this.lblNotMatch.Text = "❌ Not Match";
+            this.lblNotMatch.Visible = false;
+            // 
             // tbConfPass
             // 
-            this.tbConfPass.Location = new System.Drawing.Point(106, 254);
+            this.tbConfPass.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbConfPass.Location = new System.Drawing.Point(106, 258);
             this.tbConfPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbConfPass.Name = "tbConfPass";
+            this.tbConfPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbConfPass.Size = new System.Drawing.Size(239, 27);
             this.tbConfPass.TabIndex = 7;
             this.tbConfPass.UseSystemPasswordChar = true;
@@ -269,7 +282,7 @@
             this.btnRegister.TabIndex = 8;
             this.btnRegister.Text = "JOIN";
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // tbNewPass
             // 
@@ -321,10 +334,10 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(562, 539);
             this.Controls.Add(this.loginPanel);
-            this.Controls.Add(this.registerPanel);
             this.Controls.Add(this.btnGoToRegister);
             this.Controls.Add(this.btnGoToLogin);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.registerPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginRegister";
@@ -364,5 +377,6 @@
         private TextBox tbNewUsername;
         private Label lblNewUsername;
         private TextBox tbConfPass;
+        private Label lblNotMatch;
     }
 }
