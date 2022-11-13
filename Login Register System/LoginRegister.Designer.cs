@@ -38,6 +38,7 @@
             this.tbUsernameLogin = new System.Windows.Forms.TextBox();
             this.lblUsername = new System.Windows.Forms.Label();
             this.registerPanel = new System.Windows.Forms.Panel();
+            this.lblNotMatch = new System.Windows.Forms.Label();
             this.tbConfPass = new System.Windows.Forms.TextBox();
             this.lblConfPass = new System.Windows.Forms.Label();
             this.tbFullName = new System.Windows.Forms.TextBox();
@@ -75,7 +76,7 @@
             this.btnGoToLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGoToLogin.ForeColor = System.Drawing.Color.Snow;
             this.btnGoToLogin.Location = new System.Drawing.Point(61, 78);
-            this.btnGoToLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoToLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoToLogin.Name = "btnGoToLogin";
             this.btnGoToLogin.Size = new System.Drawing.Size(224, 64);
             this.btnGoToLogin.TabIndex = 1;
@@ -91,7 +92,7 @@
             this.btnGoToRegister.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGoToRegister.ForeColor = System.Drawing.Color.Snow;
             this.btnGoToRegister.Location = new System.Drawing.Point(282, 78);
-            this.btnGoToRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGoToRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoToRegister.Name = "btnGoToRegister";
             this.btnGoToRegister.Size = new System.Drawing.Size(224, 64);
             this.btnGoToRegister.TabIndex = 2;
@@ -107,8 +108,8 @@
             this.loginPanel.Controls.Add(this.lblPassword);
             this.loginPanel.Controls.Add(this.tbUsernameLogin);
             this.loginPanel.Controls.Add(this.lblUsername);
-            this.loginPanel.Location = new System.Drawing.Point(61, 147);
-            this.loginPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.loginPanel.Location = new System.Drawing.Point(60, 146);
+            this.loginPanel.Margin = new System.Windows.Forms.Padding(2);
             this.loginPanel.Name = "loginPanel";
             this.loginPanel.Size = new System.Drawing.Size(446, 354);
             this.loginPanel.TabIndex = 0;
@@ -120,7 +121,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.Snow;
             this.btnLogin.Location = new System.Drawing.Point(138, 218);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(176, 40);
             this.btnLogin.TabIndex = 5;
@@ -131,7 +132,7 @@
             // tbPasswordLogin
             // 
             this.tbPasswordLogin.Location = new System.Drawing.Point(105, 146);
-            this.tbPasswordLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbPasswordLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tbPasswordLogin.Name = "tbPasswordLogin";
             this.tbPasswordLogin.Size = new System.Drawing.Size(239, 27);
             this.tbPasswordLogin.TabIndex = 4;
@@ -153,7 +154,7 @@
             // tbUsernameLogin
             // 
             this.tbUsernameLogin.Location = new System.Drawing.Point(105, 90);
-            this.tbUsernameLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbUsernameLogin.Margin = new System.Windows.Forms.Padding(2);
             this.tbUsernameLogin.Name = "tbUsernameLogin";
             this.tbUsernameLogin.Size = new System.Drawing.Size(239, 27);
             this.tbUsernameLogin.TabIndex = 3;
@@ -175,6 +176,7 @@
             // registerPanel
             // 
             this.registerPanel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.registerPanel.Controls.Add(this.lblNotMatch);
             this.registerPanel.Controls.Add(this.tbConfPass);
             this.registerPanel.Controls.Add(this.lblConfPass);
             this.registerPanel.Controls.Add(this.tbFullName);
@@ -187,16 +189,28 @@
             this.registerPanel.Controls.Add(this.tbNewUsername);
             this.registerPanel.Controls.Add(this.lblNewUsername);
             this.registerPanel.Location = new System.Drawing.Point(61, 147);
-            this.registerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.registerPanel.Margin = new System.Windows.Forms.Padding(2);
             this.registerPanel.Name = "registerPanel";
             this.registerPanel.Size = new System.Drawing.Size(446, 354);
             this.registerPanel.TabIndex = 0;
             // 
+            // lblNotMatch
+            // 
+            this.lblNotMatch.AutoSize = true;
+            this.lblNotMatch.Location = new System.Drawing.Point(278, 236);
+            this.lblNotMatch.Name = "lblNotMatch";
+            this.lblNotMatch.Size = new System.Drawing.Size(104, 20);
+            this.lblNotMatch.TabIndex = 9;
+            this.lblNotMatch.Text = "❌ Not Match";
+            this.lblNotMatch.Visible = false;
+            // 
             // tbConfPass
             // 
-            this.tbConfPass.Location = new System.Drawing.Point(106, 254);
-            this.tbConfPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbConfPass.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.tbConfPass.Location = new System.Drawing.Point(106, 258);
+            this.tbConfPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbConfPass.Name = "tbConfPass";
+            this.tbConfPass.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbConfPass.Size = new System.Drawing.Size(239, 27);
             this.tbConfPass.TabIndex = 7;
             this.tbConfPass.UseSystemPasswordChar = true;
@@ -217,7 +231,7 @@
             // tbFullName
             // 
             this.tbFullName.Location = new System.Drawing.Point(106, 36);
-            this.tbFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbFullName.Margin = new System.Windows.Forms.Padding(2);
             this.tbFullName.Name = "tbFullName";
             this.tbFullName.Size = new System.Drawing.Size(239, 27);
             this.tbFullName.TabIndex = 3;
@@ -238,7 +252,7 @@
             // tbAge
             // 
             this.tbAge.Location = new System.Drawing.Point(106, 90);
-            this.tbAge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbAge.Margin = new System.Windows.Forms.Padding(2);
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(239, 27);
             this.tbAge.TabIndex = 4;
@@ -262,18 +276,18 @@
             this.btnRegister.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnRegister.ForeColor = System.Drawing.Color.Snow;
             this.btnRegister.Location = new System.Drawing.Point(138, 304);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(176, 40);
             this.btnRegister.TabIndex = 8;
             this.btnRegister.Text = "JOIN";
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // tbNewPass
             // 
             this.tbNewPass.Location = new System.Drawing.Point(106, 198);
-            this.tbNewPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNewPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbNewPass.Name = "tbNewPass";
             this.tbNewPass.Size = new System.Drawing.Size(239, 27);
             this.tbNewPass.TabIndex = 6;
@@ -295,7 +309,7 @@
             // tbNewUsername
             // 
             this.tbNewUsername.Location = new System.Drawing.Point(106, 142);
-            this.tbNewUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbNewUsername.Margin = new System.Windows.Forms.Padding(2);
             this.tbNewUsername.Name = "tbNewUsername";
             this.tbNewUsername.Size = new System.Drawing.Size(239, 27);
             this.tbNewUsername.TabIndex = 5;
@@ -320,16 +334,17 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(562, 539);
             this.Controls.Add(this.loginPanel);
-            this.Controls.Add(this.registerPanel);
             this.Controls.Add(this.btnGoToRegister);
             this.Controls.Add(this.btnGoToLogin);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.registerPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginRegister_FormClosed);
+            this.Load += new System.EventHandler(this.LoginRegister_Load);
             this.loginPanel.ResumeLayout(false);
             this.loginPanel.PerformLayout();
             this.registerPanel.ResumeLayout(false);
@@ -362,5 +377,6 @@
         private TextBox tbNewUsername;
         private Label lblNewUsername;
         private TextBox tbConfPass;
+        private Label lblNotMatch;
     }
 }

@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace Login_Register_System
 {
     public partial class HomePageForm : Form
     {
         private string username;
+        private string password;
         public HomePageForm(string username)
         {
             this.username = username;
