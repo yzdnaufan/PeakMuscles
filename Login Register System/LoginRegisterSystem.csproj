@@ -10,10 +10,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Npgsql" Version="6.0.7" />
+    <PackageReference Include="Npgsql" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CalorieIntake\CalorieIntake.csproj" />
     <ProjectReference Include="..\WorkoutTrainer\WorkoutTrainer.csproj" />
   </ItemGroup>
 

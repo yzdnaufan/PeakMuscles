@@ -1,5 +1,3 @@
-
-
 using Npgsql;
 using System.Security.Cryptography;
 

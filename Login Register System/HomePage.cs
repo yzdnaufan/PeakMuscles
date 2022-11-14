@@ -26,21 +26,23 @@ namespace Login_Register_System
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void HomePageForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCalorieIntake_Click(object sender, EventArgs e)
+        {
+            CalorieIntake.mainCal maincal = new CalorieIntake.mainCal();
+            this.Hide();
+            maincal.Show();
+        }
+
+        private void btnTrainer_Click(object sender, EventArgs e)
         {
             WorkoutTrainer.main main = new WorkoutTrainer.main();
             this.Hide();
             main.Show();
-        }
-
-        private void HomePageForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
