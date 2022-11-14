@@ -7,18 +7,55 @@ using System.Threading.Tasks;
 
 namespace WorkoutTrainer
 {
-    internal class Muscle
+    public class Muscle
     {
+        protected string _url;
+        protected double count;
 
+        /// <summary>
+        /// DON'T USE YET
+        /// </summary>
+        /// <param name="url"></param>
+        public Muscle(string url)
+        {
+            _url = url;
+        }
+
+        /// <summary>
+        /// DON'T USE YET
+        /// </summary>
+        /// <param name="jumlah"></param>
+        public virtual void MuscleCount(int jumlah)
+        {
+            count += jumlah;
+        }
     }
     class upper : Muscle
     {
-        public string _chest;
-        public string _abs;
-        public string _biceps;
-        public string _triceps;
-        public string _shoulder;
-        public string _backTraps;
+        //DON'T USE YET
+        public upper(string url) : base(url)
+        {
+            this._url=url;
+        }
+
+        /// <summary>
+        /// DON'T USE YET
+        /// </summary>
+        /// <param name="jumlah"></param>
+        public override void MuscleCount(int jumlah)
+        {
+            this.count += Convert.ToDouble(jumlah) - 0.5;
+        }
+
+        public string? _chest;
+        public string? _abs;
+        public string? _biceps;
+        public string? _triceps;
+        public string? _shoulder;
+        public string? _backTraps;
+
+        
+
         public string Chest
         {
             get { return _chest; }
@@ -54,6 +91,16 @@ namespace WorkoutTrainer
     {
         public string _legs;
         public string _glutes;
+
+        /// <summary>
+        /// DON'T USE YET
+        /// </summary>
+        /// <param name="url"></param>
+        public lower(string url) : base(url)
+        {
+            this._url=url;
+        }
+
         public string Legs
         {
             get { return _legs; }
