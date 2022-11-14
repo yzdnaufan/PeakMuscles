@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Login_Register_System
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Login_Register_System
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new HomePageForm( "hans"));
+            Application.Run(new LoginRegister());
         }
     }
 }
