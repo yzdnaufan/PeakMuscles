@@ -58,13 +58,20 @@ namespace Login_Register_System
                 if ((string)cmd.ExecuteScalar() != "0")
                 {
                     this.Hide();
-                    MessageBox.Show("Login berhasil! selamat datang " + cmd.ExecuteScalar().ToString(), "Login Berhasil!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Login berhasil! selamat datang " 
+                        + cmd.ExecuteScalar().ToString(), 
+                        "Login Berhasil!", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information);
                     HomePageForm homepage = new HomePageForm(" ");
                     homepage.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Informasi yang anda masukkan salah !", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informasi yang anda masukkan salah !", 
+                        "Warning!", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error);
                 }
                 NpgsqlConnection.Close();
             }
@@ -87,7 +94,10 @@ namespace Login_Register_System
         private void btnRegister_Click(object sender, EventArgs e)
         {
 
-            if (tbConfPass.Text != tbNewPass.Text || tbFullName.Text=="" || tbAge.Text=="" || tbNewUsername.Text=="")
+            if (tbConfPass.Text != tbNewPass.Text || 
+                tbFullName.Text=="" || 
+                tbAge.Text=="" || 
+                tbNewUsername.Text=="")
             {
                 if (tbFullName.Text == "")
                 {
@@ -141,11 +151,13 @@ namespace Login_Register_System
                 if ((int)cmd.ExecuteScalar() ==1)
                 {
                     loginPanel.BringToFront();
-                    MessageBox.Show("Registrasi berhasil! silahkan login ke menu awal.", "Registrasi Berhasil!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Registrasi berhasil! silahkan login ke menu awal.", 
+                        "Registrasi Berhasil!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Informasi yang anda masukkan salah !", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informasi yang anda masukkan salah !", 
+                        "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 NpgsqlConnection.Close();
             }
