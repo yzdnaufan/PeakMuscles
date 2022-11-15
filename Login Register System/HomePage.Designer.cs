@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnTrainer = new System.Windows.Forms.Button();
+            this.btnCalorieIntake = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -42,48 +42,48 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(51, 47);
+            this.label1.Location = new System.Drawing.Point(64, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(514, 46);
+            this.label1.Size = new System.Drawing.Size(624, 56);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome to PeakMuscles!";
             // 
-            // button1
+            // btnTrainer
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(95, 458);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 56);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Trainer";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnTrainer.BackColor = System.Drawing.Color.IndianRed;
+            this.btnTrainer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTrainer.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnTrainer.Location = new System.Drawing.Point(119, 572);
+            this.btnTrainer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTrainer.Name = "btnTrainer";
+            this.btnTrainer.Size = new System.Drawing.Size(174, 70);
+            this.btnTrainer.TabIndex = 1;
+            this.btnTrainer.Text = "Trainer";
+            this.btnTrainer.UseVisualStyleBackColor = false;
+            this.btnTrainer.Click += new System.EventHandler(this.btnTrainer_Click);
             // 
-            // button2
+            // btnCalorieIntake
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(363, 458);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 56);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Calories Intake";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnCalorieIntake.BackColor = System.Drawing.Color.IndianRed;
+            this.btnCalorieIntake.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCalorieIntake.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCalorieIntake.Location = new System.Drawing.Point(454, 572);
+            this.btnCalorieIntake.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCalorieIntake.Name = "btnCalorieIntake";
+            this.btnCalorieIntake.Size = new System.Drawing.Size(174, 70);
+            this.btnCalorieIntake.TabIndex = 2;
+            this.btnCalorieIntake.Text = "Calories Intake";
+            this.btnCalorieIntake.UseVisualStyleBackColor = false;
+            this.btnCalorieIntake.Click += new System.EventHandler(this.btnCalorieIntake_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Login_Register_System.Properties.Resources._1;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 156);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 195);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(249, 264);
+            this.pictureBox1.Size = new System.Drawing.Size(311, 330);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -91,27 +91,28 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Login_Register_System.Properties.Resources._2;
-            this.pictureBox2.Location = new System.Drawing.Point(314, 156);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(392, 195);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(249, 264);
+            this.pictureBox2.Size = new System.Drawing.Size(311, 330);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
             // HomePageForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(590, 554);
+            this.ClientSize = new System.Drawing.Size(738, 692);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCalorieIntake);
+            this.Controls.Add(this.btnTrainer);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HomePageForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.HomePageForm_FormClosed);
             this.Load += new System.EventHandler(this.HomePage_Load);
@@ -125,8 +126,8 @@
         #endregion
 
         private Label label1;
-        private Button button1;
-        private Button button2;
+        private Button btnTrainer;
+        private Button btnCalorieIntake;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
     }
