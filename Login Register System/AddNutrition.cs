@@ -8,9 +8,10 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Login_Register_System;
 using Npgsql;
 
-namespace CalorieIntake
+namespace Login_Register_System
 {
     public partial class AddNutrition : Form
     {
@@ -88,7 +89,8 @@ namespace CalorieIntake
         private void pictboxHome_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+            HomePageForm home = new HomePageForm(" ");
+            home.Show();
         }
     }
 }

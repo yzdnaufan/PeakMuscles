@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkoutTrainer", "..\Workou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginRegisterSystem", "..\Login Register System\LoginRegisterSystem.csproj", "{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalorieIntake", "..\CalorieIntake\CalorieIntake.csproj", "{8994AE25-CA66-4D96-8182-038C4985FBB6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D9625F-534A-4474-9A5D-82DE3DBACC6D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8994AE25-CA66-4D96-8182-038C4985FBB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8994AE25-CA66-4D96-8182-038C4985FBB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8994AE25-CA66-4D96-8182-038C4985FBB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8994AE25-CA66-4D96-8182-038C4985FBB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

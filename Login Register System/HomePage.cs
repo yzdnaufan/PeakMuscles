@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalorieIntake;
 using Npgsql;
 
 namespace Login_Register_System
@@ -33,9 +34,9 @@ namespace Login_Register_System
 
         private void btnCalorieIntake_Click(object sender, EventArgs e)
         {
-            CalorieIntake.mainCal maincal = new CalorieIntake.mainCal();
+            mainCal mainCal = new mainCal();
             this.Hide();
-            maincal.Show();
+            mainCal.Show();
         }
 
         private void btnTrainer_Click(object sender, EventArgs e)
