@@ -1,11 +1,24 @@
+using Npgsql;
+
 namespace WorkoutTrainer
 {
     public partial class main : Form
     {
-        private string bgState;
+        private string? bgState;
+        private string _username;
 
-        public main()
+        private List<Muscle> muscles = new List<Muscle>();
+        private Muscle muscle = new Muscle();
+
+        private NpgsqlCommand cmd;
+        private int i=0;
+
+        private NpgsqlConnection NpgsqlConnection;
+        string connstr = "Host=juniorproject-peakmuscle.postgres.database.azure.com; Port=5432; Username=peakmuscle; Password=YazidTinaNovaldy2022; Database=junpro";
+
+        public main(string username)
         {
+            this._username = username;
             InitializeComponent();
         }
 
@@ -24,9 +37,46 @@ namespace WorkoutTrainer
 
         }
 
+        private List<Muscle> load_data(string s)
+        {
+            List<Muscle> m = new List<Muscle>();
+            try
+            {
+
+                NpgsqlConnection.Open();
+                string sql = $"select * from public.\"tb{s}\"";       //change to npgsql function for each muscle
+                cmd = new NpgsqlCommand(sql, NpgsqlConnection);
+
+                NpgsqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    m.Add(new Muscle { 
+                        _name = dr["nama"].ToString(), 
+                        _url = dr["url"].ToString(), 
+                        id= Convert.ToInt32(dr["id"]) });
+                }
+                NpgsqlConnection.Close();
+                return m;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+        private void Default_load_data(string s="Abs")
+        {   
+            muscles = load_data(s);
+            lblNamaGerakan.Text = muscles[i]._name;
+            pbGerakan.ImageLocation = muscles[i]._url;
+        }
+
         private void main_Load(object sender, EventArgs e)
         {
+            NpgsqlConnection = new NpgsqlConnection(connstr);
             label1.Text = this.Text;
+            Default_load_data();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,8 +89,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://seven.app/media/images/Crunches.gif");
                 bgState = this.button1.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -49,8 +100,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://media.tenor.com/gI-8qCUEko8AAAAM/pushup.gif");
                 bgState = this.button2.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -59,8 +111,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://seven.app/media/images/image4.gif");
                 bgState = this.button3.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -69,8 +122,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://images.everydayhealth.com/images/6-top-triceps-tricep-dip.gif");
                 bgState = this.button4.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -79,8 +133,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://images.everydayhealth.com/images/best-exercises-for-stronger-arm-muscles-wide-curl.gif");
                 bgState = this.button5.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -89,8 +144,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://cdn.shopify.com/s/files/1/1501/0558/files/Lateral_Shoulder_Raises.gif?v=1506073016");
                 bgState = this.button6.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -99,8 +155,9 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://miro.medium.com/max/960/1*R7JxVbE2uc18G37natvTgw.gif");
                 bgState = this.button7.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
             }
         }
 
@@ -110,8 +167,42 @@ namespace WorkoutTrainer
         {
             if (bgState != this.Text.ToString())
             {
-                bgPict.Load("https://www.ammfitness.co.uk/information-advice/wp-content/uploads/2020/04/Glute-Bridge.gif");
                 bgState = this.button8.Text.ToString();
+                Default_load_data(bgState);
+                label1.Text = bgState;
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (i+1 >= muscles.Count)
+            {
+                i = 0;
+                pbGerakan.ImageLocation = muscles[i]._url;
+                lblNamaGerakan.Text = muscles[i]._name;
+            }
+            else
+            {
+                i++;
+                pbGerakan.ImageLocation = muscles[i]._url;
+                lblNamaGerakan.Text = muscles[i]._name;
+            }
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (i - 1 <0)
+            {
+                i = muscles.Count-1;
+
+                pbGerakan.ImageLocation = muscles[i]._url;
+                lblNamaGerakan.Text = muscles[i]._name;
+            }
+            else
+            {
+                i--;
+                pbGerakan.ImageLocation = muscles[i]._url;
+                lblNamaGerakan.Text = muscles[i]._name;
             }
         }
     }

@@ -34,14 +34,14 @@ namespace Login_Register_System
 
         private void btnCalorieIntake_Click(object sender, EventArgs e)
         {
-            mainCal mainCal = new mainCal();
+            mainCal mainCal = new mainCal(username);
             this.Hide();
             mainCal.Show();
         }
 
         private void btnTrainer_Click(object sender, EventArgs e)
         {
-            WorkoutTrainer.main main = new WorkoutTrainer.main();
+            WorkoutTrainer.main main = new WorkoutTrainer.main(username);
             this.Hide();
             main.Show();
         }

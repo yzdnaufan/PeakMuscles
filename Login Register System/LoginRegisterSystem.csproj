@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CalorieIntake\CalorieIntake.csproj" />
     <ProjectReference Include="..\WorkoutTrainer\WorkoutTrainer.csproj" />
   </ItemGroup>
 
