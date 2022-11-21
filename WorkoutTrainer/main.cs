@@ -66,7 +66,8 @@ namespace WorkoutTrainer
         }
 
         private void Default_load_data(string s="Abs")
-        {   
+        {
+            i = 0;
             muscles = load_data(s);
             lblNamaGerakan.Text = muscles[i]._name;
             pbGerakan.ImageLocation = muscles[i]._url;

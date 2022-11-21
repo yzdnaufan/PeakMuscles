@@ -200,10 +200,10 @@
             // lblNamaGerakan
             // 
             this.lblNamaGerakan.AutoSize = true;
-            this.lblNamaGerakan.Font = new System.Drawing.Font("Airbnb Cereal App", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblNamaGerakan.Location = new System.Drawing.Point(561, 78);
+            this.lblNamaGerakan.Font = new System.Drawing.Font("Airbnb Cereal App", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNamaGerakan.Location = new System.Drawing.Point(485, 76);
             this.lblNamaGerakan.Name = "lblNamaGerakan";
-            this.lblNamaGerakan.Size = new System.Drawing.Size(79, 31);
+            this.lblNamaGerakan.Size = new System.Drawing.Size(61, 23);
             this.lblNamaGerakan.TabIndex = 0;
             this.lblNamaGerakan.Text = "label1";
             this.lblNamaGerakan.Click += new System.EventHandler(this.label1_Click);
