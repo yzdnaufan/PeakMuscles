@@ -13,11 +13,14 @@ namespace Login_Register_System
 {
     public partial class mainCal : Form
     {
+
+        private string _username;
         public static string? setCal;
         public static int numberCal;
         string txt = "Enter the target amount of calories";
-        public mainCal()
+        public mainCal(string username)
         {
+            this._username = username;
             InitializeComponent();
         }
 
@@ -66,7 +69,9 @@ namespace Login_Register_System
 
         private void pictboxHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            HomePageForm home = new HomePageForm(_username);
+            home.Show();
+            this.Hide();
         }
     }
 }

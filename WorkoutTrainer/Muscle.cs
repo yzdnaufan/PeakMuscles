@@ -9,17 +9,17 @@ namespace WorkoutTrainer
 {
     public class Muscle
     {
-        protected string _url;
-        protected double count;
+        public string _url { get; set; }
+        public string _name { get; set; }
+        public int id { get; set; }
 
-        /// <summary>
-        /// DON'T USE YET
-        /// </summary>
-        /// <param name="url"></param>
-        public Muscle(string url)
+        protected int count;
+
+        public Muscle()
         {
-            _url = url;
+
         }
+
 
         /// <summary>
         /// DON'T USE YET
@@ -32,11 +32,6 @@ namespace WorkoutTrainer
     }
     class upper : Muscle
     {
-        //DON'T USE YET
-        public upper(string url) : base(url)
-        {
-            this._url=url;
-        }
 
         /// <summary>
         /// DON'T USE YET
@@ -44,7 +39,7 @@ namespace WorkoutTrainer
         /// <param name="jumlah"></param>
         public override void MuscleCount(int jumlah)
         {
-            this.count += Convert.ToDouble(jumlah) - 0.5;
+            this.count += jumlah - 2;
         }
 
         public string? _chest;
@@ -96,10 +91,6 @@ namespace WorkoutTrainer
         /// DON'T USE YET
         /// </summary>
         /// <param name="url"></param>
-        public lower(string url) : base(url)
-        {
-            this._url=url;
-        }
 
         public string Legs
         {
